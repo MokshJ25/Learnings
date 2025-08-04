@@ -1,4 +1,4 @@
-### My Tech Learnings ### 
+## My Tech Learnings ## 
 
 This repository contains all my coding practice and challenges (practice questions) while learning various programming concepts and languages.
 
