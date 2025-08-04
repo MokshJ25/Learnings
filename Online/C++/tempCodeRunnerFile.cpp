@@ -1,0 +1,1 @@
+To know aout a header file: press ctrl and click on that header file.
