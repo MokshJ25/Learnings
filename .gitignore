@@ -1,14 +1,17 @@
-#ignore IntelliJ project files
+### ignore IntelliJ project files ###
 .ideal/
 **/.ideal/
 *.iml
 **/*.iml
 
-#ignore compiled Java files and output
+### ignore compiled Java files and output ###
 /out/
 **/out/
 /target/
 **/*.class
+
+### ignore compiled c++ ###
+*.exe
 
 ### IntelliJ IDEA ###
 out/
