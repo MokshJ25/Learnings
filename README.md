@@ -14,7 +14,8 @@ It's neatly structured by topics and learning sources for easy navigation and fu
             - `Front End/`
                 - `HTML`
                 - `CSS`
-OTHERS ARE BREWING.. STAY TUNED
+                - 
+OTHERS ARE BREWING.. STAY TUNED!
 > I’ll continue expanding this repository with new technologies and offline learnings soon.
 
 ### Purpose of This Repository
