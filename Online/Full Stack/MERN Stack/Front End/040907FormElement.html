@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label element and placeholder attribute</title>
+</head>
+<body>
+    <form action="/action">
+        <label>
+            Username:
+            <input type="text" placeholder="Enter Username"  ><br>
+        </label>
+
+        <label for="password"> Password: </label>
+        <input type="password" id="password" placeholder="Enter Password"><br>
+
+        <div>
+        <label for="age"> Age: </label>
+        <input type="number" id="age" placeholder="Enter age">
+        </div> 
+    </form>
+</body>
+</html> 
+
+<!--"placeholder" ek input element ka attribute hai jisko use karke ham apne input box ke
+    upar kuch bhi light text me write karwa sakte hai, or user jab bhi us box pe kuch bhi type
+    karne lagega to wo text hat jaega.
+    
+    "label" ek element hai which represents the caption for the input box
+    it forms the connection between our label text and input box.
+    "label" can also contain "for" attribute but then the input must contain the "id"
+    attribute with the same value as the "for" attribute of the "label" element. ye batata hai ki
+    label is "for" that particular "id"(which is in input) and this "id" also makes the 
+    input element unique. jo value "id" ke andar hui wahi value us input element ko bhi assign 
+    hui hai.
+    isme zaruri nahi hai ki "label" ke andar hi input element aana chahiye, baad me "for" or
+    "id" ki madad se ham use("input" element ko) kahi se bhi fetch kar sakte hai.-->

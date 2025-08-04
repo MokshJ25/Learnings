@@ -1,0 +1,25 @@
+.card
+{
+    width:150px;
+    height: 300px;
+    border:2px solid black;
+    display:inline-block;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px black; 
+    /*yani shadow x axis se 0px, or y axis ke 4 px ki distance par rahegi. jiska spread or blury effect 8px tak rahega*/
+    transition: 1s;
+}
+img
+{
+    width:100%; /*jitni parent(div(here)) ki width(200px(here)) hai, utni hi width image ki bhi ho jae, i.e., 200px*/
+    border-radius: 5px 5px 0 0;
+}
+.desc
+{
+    padding: 0 5px 0 5px;
+}
+.card:hover
+{
+    box-shadow: 4px 8px 16px black;
+}

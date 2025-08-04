@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name attribure</title>
+</head>
+<body>
+    <form action="/action">
+        <label for="username"> Username: </label>
+        <input type="text" id="username" placeholder="Enter Username" name="username" ><br>
+        <label for="password"> Password: </label>
+        <input type="password" id="password" placeholder="Enter Password"><br>
+        <button>Submit</button>
+    </form> 
+
+    <hr> <!--used to draw a horizontal line in the page-->
+    
+    <form action="https://www.youtube.com/results">
+    <!--original query of youtubeP: https://www.youtube.com/results?search_query=marvel-->
+        <input type="text" placeholder="search in youtube" name="search_query"> <br>
+        <button>submit</button>
+    </form>
+</body>
+</html> 
+
+<!--hamara jo "name" attribute hota hai wo input me define hota hai, or ye name
+    attribute hamare "input" element ko ek name deta hai wo webpage ke url me reflect 
+    hota hai, to access the input box in backend. ham jis naam ka use karke hamara inbox 
+    backend ko batane wale hai wo is "name" attribute me aaega. ye name-value ke pair me 
+    paas hota hai, jaha value is the text we insert in input box and the name is the
+    attribute jisko ham define karenge.
+    ye name hamare url me reflect hoga.
+
+    "action" hamare input ka data url ko bhejta hai or uske just pehle waha url me last 
+    me "?" lag jata hai 
+     v
+    here we have made another form to search in the youtube directly. we have connected
+    another webpage to our webpage.
+    yaha hamne action me ek url dala hai jo youtuve use karte hai kisi query ko search
+    karne ke lie, or wo use karta hai "search_query" as its name to search the query.
+    hamne bhi yaha name me "search_query" dala hai, jo ki jab "submit" button click hoga to
+    hamara "name" action ki url ke sath connect ho jaega, or jo bhi user "input"
+    box me query dalega wo name ke sath connect ho jaegi, since we have made the pair of
+    name and value, or aise hamara pura url complete ho jaega or query run hogi to wo
+    redirect hoke "action" attribute ke through youtube par pohoch jaegi -->

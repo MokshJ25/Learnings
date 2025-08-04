@@ -1,0 +1,37 @@
+h1
+{
+    text-align: center;
+    border: solid;
+    /* width: 50%;*/ /*it decides that how weidht of the total granterd weidth
+     will be taken by the h1 tag*/  
+    text-decoration: underline; 
+    letter-spacing: 10px;
+    font-family: papyrus;
+}
+
+h2
+{
+    text-align: right;
+    font-weight: 600;
+    text-decoration:line-through;
+    text-decoration-color:red;
+    /*we can also write, instead of above two lines as:
+      text-decoration: red underline/overline/line-through;*/
+    text-decoration-style:wavy;
+    /*we can also write, instead of above line as:
+      text-decoration: wavy/dotted/double/dashed underline/overline/line-through;*/
+    /*we can also write, instead of above three line as: 
+    text-decoration: wavy red line-through*/
+}
+
+p1
+{
+  text-align: justify;
+  font-weight: bold;
+}
+
+p2
+{
+  line-height:2.5;
+  font-size: 10px;
+}

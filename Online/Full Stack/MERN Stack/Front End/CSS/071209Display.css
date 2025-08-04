@@ -1,0 +1,26 @@
+/* "heading" is a block element and "span" is an inline element */
+
+/* "heading" is a block element, now converting it to inline: */
+h2
+{
+    display:inline;
+}
+/* "span" is an inline element, now converting it to block: */
+span
+{
+    display:block;
+}
+#prac
+{
+    display:inline;
+    background-color: lime;
+    border: 2px solid grey;
+    height:100px; /* do not get set */
+    width:200px; /* do not get set */
+    padding: 50px; /* only gets set for left and right */
+    margin: 50px; /* only gets set for left and right */
+}
+/* NOTE: for "inline" element, the "height" or "width" never gets set and "padding" or "margin"
+   only gets set for left and right */
+/* NOTE: for "block" element, the "height" or "width" gets set and "padding" or "margin"
+   gets set for all 4 directions  */

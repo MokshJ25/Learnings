@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input element type="checkbox"</title>
+</head>
+<body>
+    <form action="server">
+        <input type="radio" name="fruit" id="apple"> <!--for creation the box for apple-->
+        <label for="apple"> Apple </label> <!--for giving label to the above box-->
+        <input type="radio" name="fruit" id="mango" value="mango" checked>
+        <label for="mango"> Mango </label>
+        <input type="radio" name="fruit" id="banana" value="banana">
+        <label for="banana"> Banana </label>
+        <button>submit</button>
+    </form>
+</body>
+</html> 
+
+<!--this type="radio" in "input" element creates the radio button, now since we have passed 
+    "name" also in "input" element, it means our url will contain this name-value pair, par
+    jab radio tick hoga tab hi wo url me include hoga nahi to nahi hoga.
+    yadi input element me "checked" attribute bhi daalte hai to hamara checkbox by default
+    tick hoke aaega, usko fir chaho to untick kar sakte hai
+    yadi ham input element me "value="mango"" nahi likhenge or select karenge to hamari url
+    me "fruit=on" likha hua aaega, yani kya subject select kia hai wo nahi dikhega. lekin
+    ham likh dete hai to url me bhi "fruit=mango" pass hoga (yadi ham mango ko chun lete 
+    hai to)
+    
+    multiple check box banane ke lie ham baar baar "input" and "label" element define karenge
+    (to make the box and label respectively) and to group the whole radio together, we will 
+    have to give the same name in the "name" attribute of the "input element" we want to group 
+    together.-->

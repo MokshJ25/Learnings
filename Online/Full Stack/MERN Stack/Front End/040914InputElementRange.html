@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input element type="range"</title>
+</head>
+<body>
+    <form>
+        Select the range:
+        <label for="volume">Select your Volume level: </label>
+        <input type="range" min="0" max="100" name="volume" id="volume">
+        <br>
+        <label for="bass">Select your Bass level: </label>
+        <input type="range" min="0" max="100" name="bass" id="bass" step="10" value="30">
+        <button>submit</button>
+    </form>
+    
+</body>
+</html>
+
+<!--"min" defines the minimum level of the range
+    "max" defines the maximum level of the range
+    "steps" defines that range will increse by how much intervals
+    "value" defines ki by default range ki value kya hogi-->

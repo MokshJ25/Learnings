@@ -1,0 +1,112 @@
+/*061103:*/
+*
+{
+    font-family:"Courier New";
+} 
+
+/*061104:*/
+h1 
+{
+    color:#b92b27;
+}
+
+/*061105:*/
+#login 
+{
+    background-color: white;
+}
+#signup 
+{
+    background-color: #b92b27;
+    color:white;
+}
+
+/*061106:*/
+.upvote
+{
+    background-color: green;
+    color:white;
+}
+
+/* 061108: */
+/*for anchor tags present inside paragraph(containing posts) in "index.html"*/
+p a
+{
+    color:purple;
+    background-color: yellow;
+}
+nav ul li a
+{
+    color:hotpink;
+}
+
+/* 061109: */
+p+h3
+{
+    text-decoration: underline;
+}
+.upvote+button
+{
+    background-color:cornflowerblue;
+    color:darkblue;
+}
+
+/* 061110: */
+div>input
+{
+    background-color:darksalmon;
+}
+
+/* 061111: */
+input[type="text"]
+{
+    color:red;
+}
+input[type="password"]
+{
+    color:green;
+}
+input[type]
+{
+    background-color:ghostwhite;
+}
+
+/* 061113: */
+button:hover
+{
+    background-color: black;
+    color:white;
+} 
+button:active
+{
+    background-color:hotpink;
+    color:black;
+}
+p:active
+{
+    font-weight: bold;
+    color:green;
+}
+input[type="radio"]:checked + label
+{
+    font-weight: bold;
+    color:red;
+}
+div:nth-of-type(2n)
+{
+    background-color:coral;
+}
+
+/* 061114: */
+h1::first-letter
+{
+    color:black;
+}
+p::first-line
+{
+    color:blue;
+}
+p::selection
+{
+    background-color:rgb(238, 214, 76);
+}

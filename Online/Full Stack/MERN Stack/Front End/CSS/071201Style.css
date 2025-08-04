@@ -1,0 +1,55 @@
+/* 071203: */
+div
+{
+    height:200px;
+    width:500px;
+    background-color:pink;
+}
+
+/* 071204: */
+div
+{
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+h1
+{
+    border-width: 8px;
+    border-style: dashed;
+    border-color: skyblue;
+    /* or border: 8px dashed skyblue */
+    border-left-color: blue;
+    border-left-style: double;
+    /* or border-left: 8px blue double*/
+}
+
+/* 071205: */
+div
+{
+    border-radius: 15px;
+}
+
+/* 071206: */
+div
+{
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:20px;
+    padding-right:20px;
+}
+button
+{
+    border:2px solid black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: yellow;
+
+}
+
+/* 071207 */
+div
+{
+    margin-bottom:20px;
+}

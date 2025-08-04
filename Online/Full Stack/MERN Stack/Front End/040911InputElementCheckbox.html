@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input element type="checkbox"</title>
+</head>
+<body>
+    <form action="server">
+        <label for="age"> I Am 18+ </label> <!--gives the label for the below defined box-->
+        <input type="checkbox" name="age" id="age"> <!--gives the box for the above defined label-->
+        <button>submit</button>
+        
+        <br>
+        Choose your subjects:
+        <input type="checkbox" name="subjects" id="maths">
+        <label for="maths"> Maths </label>
+        <input type="checkbox" name="subjects" id="english" value="english">
+        <label for="english"> English </label>
+        <input type="checkbox" name="subjects" id="science" value="science" checked>
+        <label for="science"> Science </label>
+      
+    </form>
+</body>
+</html>
+
+<!--this type="checkbox" in "input" element creates the checkbox, now since qwe have passed 
+    "name" also in "input" element, it means our url will contain this name-value pair, par
+    jab checkbox tick hoga tab hi wo url me include hoga nahi to nahi hoga.
+    yadi input element me "checked" attribute bhi daalte hai to hamara checkbox by default
+    tick hoke aaega, usko fir chaho to untick kar sakte hai
+    yadi ham input element me "value="english"" nahi likhenge or select karenge to hamari url
+    me "subjects=on" likha hua aaega, yani kya subject select kia hai wo nahi dikhega. lekin
+    ham likh dete hai to url me bhi "subjects=english" pass hoga (yadi ham english ko chun lete 
+    hai to)
+    
+    multiple check box banane ke lie ham baar baar "input" and "label" element define karenge
+    (to make the box and label respectively) and to group the whole checkboxes together, we will 
+    have to give the same name in the "name" attribute of the checkboxes we want to group together 
+    -->

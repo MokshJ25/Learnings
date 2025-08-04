@@ -1,0 +1,14 @@
+/* 081301: */
+div
+{
+    height:200px;
+    width:200px;
+    background-color:rgba(255,0, 0, 0.5);
+}
+
+/* 081302: */
+#div2
+{
+    background-color: #ffa505;
+    opacity:0.5;
+}
