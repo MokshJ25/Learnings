@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 1/Challenge 1/1_2_2_2Challenge/1_2_2_2Challenge.iml" filepath="$PROJECT_DIR$/Online/Java/Video 1/Challenge 1/1_2_2_2Challenge/1_2_2_2Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 1/Challenge 1/Challenge 1.iml" filepath="$PROJECT_DIR$/Online/Java/Video 1/Challenge 1/Challenge 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 2/Challenge 2/Challenge 2.iml" filepath="$PROJECT_DIR$/Online/Java/Video 2/Challenge 2/Challenge 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 3/Challenge 3/Challenge 3.iml" filepath="$PROJECT_DIR$/Online/Java/Video 3/Challenge 3/Challenge 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Learnings.iml" filepath="$PROJECT_DIR$/.idea/Learnings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 1/Video 1.iml" filepath="$PROJECT_DIR$/Online/Java/Video 1/Video 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 2/Video 2.iml" filepath="$PROJECT_DIR$/Online/Java/Video 2/Video 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Online/Java/Video 3/Video 3.iml" filepath="$PROJECT_DIR$/Online/Java/Video 3/Video 3.iml" />
+    </modules>
+  </component>
+</project>
