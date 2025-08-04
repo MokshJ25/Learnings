@@ -32,7 +32,7 @@ Backend and complete MERN stack will be covered soon.
 - `Full Stack/`
     - `MERN Stack/`
         - `Front End/` 
-            - `HTML/` 
-            - `CSS/` 
+            - `HTML` 
+            - `CSS` 
 
 >More folders will be added as I reach backend and full-stack integration.
