@@ -1,5 +1,7 @@
 ### ignore IntelliJ project files ###
 .ideal/
+*.ideal/
+/.ideal/
 **/.ideal/
 *.iml
 **/*.iml
