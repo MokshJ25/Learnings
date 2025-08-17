@@ -8,5 +8,6 @@ h1
     letter-spacing:2px;
     line-height:1.5em;
     text-decoration: teal double underline;
-    text-transform:capitalize;
+    text-transform:uppercase; /*we can write "lowercase" also here instead of "uppercase" to trabsform
+                                into lower case*/
 }
