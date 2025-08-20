@@ -5,7 +5,7 @@
 
 /* or: */
 
-div[id=myid] p
+div[id="myid"] p
 {
-    color:green;
+    color:magenta;
 }

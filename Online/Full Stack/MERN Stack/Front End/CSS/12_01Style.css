@@ -1,16 +1,16 @@
-/*061103:*/
+/*12_03:*/
 *
 {
     font-family:"Courier New";
 } 
 
-/*061104:*/
+/*12_04:*/
 h1 
 {
     color:#b92b27;
 }
 
-/*061105:*/
+/*12_05:*/
 #login 
 {
     background-color: white;
@@ -21,26 +21,26 @@ h1
     color:white;
 }
 
-/*061106:*/
+/*12_06:*/
 .upvote
 {
     background-color: green;
     color:white;
 }
 
-/* 061108: */
-/*for anchor tags present inside paragraph(containing posts) in "index.html"*/
+/* 12_08: */
+/*for anchor tags present inside paragraph(Its like inheritance) in "12_01index.html"*/
 p a
 {
     color:purple;
     background-color: yellow;
 }
-nav ul li a
+nav ul li a  /*or directly we can write "nav a"*/
 {
     color:hotpink;
 }
 
-/* 061109: */
+/* 12_09: */
 p+h3
 {
     text-decoration: underline;
@@ -51,13 +51,13 @@ p+h3
     color:darkblue;
 }
 
-/* 061110: */
-div>input
+/* 12_10: */
+div>input /*we can go only a single level in this child combinator*/
 {
     background-color:darksalmon;
 }
 
-/* 061111: */
+/* 12_11: */
 input[type="text"]
 {
     color:red;
@@ -68,10 +68,10 @@ input[type="password"]
 }
 input[type]
 {
-    background-color:ghostwhite;
+    background-color:beige;
 }
 
-/* 061113: */
+/* 12_13: */
 button:hover
 {
     background-color: black;
@@ -85,6 +85,7 @@ button:active
 p:active
 {
     font-weight: bold;
+    background-color: bisque;
     color:green;
 }
 input[type="radio"]:checked + label
@@ -97,7 +98,7 @@ div:nth-of-type(2n)
     background-color:coral;
 }
 
-/* 061114: */
+/* 12_14: */
 h1::first-letter
 {
     color:black;
