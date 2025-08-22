@@ -1,0 +1,55 @@
+#outer
+{
+    height: 400px;
+    width: 500px;
+    border:2px solid black;
+    background-color: orange;
+}
+#inner
+{
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon;
+    font-size: 1.5em; /*This will tell that parent ke font size ka 1.5 times mera bhi font size kar do*/
+    padding: 1em; /*This will tell that jab hamara last time "em" use kia is hi element ke lie uske 1 
+                    times hamara ye wala "em" set kar do. (or yadi is hi element me abhi tak "em" use nahi
+                    hua hai to jo is hi element ka font size hai uske respect me 1 times kar do)kyuki 
+                    "padding", "margin" kuch aisi property hai jo element ke hi font-size kie hisaab se set 
+                    hoti hai uske parent ke nahi*/
+}
+button
+{
+    margin-top: 10px;
+    font-size: 50px;
+    border-radius: 25px;
+    border: 5px solid green;
+    padding-left: 1em; /*this will tell ki hamare "button" ka jo bhi "font-size" hai uske 1 times hamari 
+                         "padding-left" ki value set kardo (as "padding" khud ke font-size ke hisaab se "em"
+                         use karti hai)*/
+    padding-right: 1em;/*this will tell ki hamare "button" ka jo bhi "font-size" hai uske 1 times hamari 
+                         "padding-right" ki value set kardo*/
+}
+
+/* NOW SHOWING DRAWBACKS OF USING "em" */
+section
+{
+    font-size: 20px;
+}
+.disadvantages
+{
+    font-size: 2em; /*we have just used 2em here one time and it will make fonts always double of the 
+                      previuous one in our "disadvantages" class, whenever it will be used.*/
+}
+/* And to overcome this deawback, we have to use "rem", i.e., "Root em".
+in this, the properties are set with the relation to the Root elements. unlike "em" where the properties
+get set with respect to ots parent or self. */
+/* NOW SHOWING BENIFITS OF USING "rem"(Root em) */
+#forRem
+{
+    font-size: 20px;
+}
+.advantages
+{
+    font-size: 2rem; /*we have just used 2em here one time and it will make fonts double of the 
+                      root element, whenever it will be used.*/
+}

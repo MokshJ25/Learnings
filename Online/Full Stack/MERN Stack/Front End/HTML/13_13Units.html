@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em and Rem unit</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\Codes\Learnings\Online\Full Stack\MERN Stack\Front End\CSS\13_13Units.css">
+</head>
+<body>
+    <div id="outer">
+        This is Outer.
+        <div id="inner">
+            This is Inner.
+        </div>
+    </div>
+    <button>Click me</button>
+
+    <hr>
+    <!--Now showing drawbacks of using "em" (Snowball effect)  -->
+    <section>
+        this is the section to show disadvantages of using "em"
+        <div class="disadvantages">
+            this is div1
+            <div class="disadvantages">
+                this is div2
+                <div class="disadvantages">
+                    this is div3
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+    <!--Now showing benifits of using "rem" (Root em)  -->
+    <section id="forRem">
+        this is the section to show advantages of using "rem"
+        <div class="advantages">
+            this is div1
+            <div class="advantages">
+                this is div2
+                <div class="advantages">
+                    this is div3
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

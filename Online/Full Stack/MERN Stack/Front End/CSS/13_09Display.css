@@ -4,6 +4,7 @@
 h2
 {
     display:inline;
+    background-color: pink;
 }
 /* "span" is an inline element, now converting it to block: */
 span
@@ -13,7 +14,7 @@ span
 #prac
 {
     display:inline;
-    background-color: lime;
+    /* background-color: lime; */
     border: 2px solid grey;
     height:100px; /* do not get set */
     width:200px; /* do not get set */
@@ -24,3 +25,4 @@ span
    only gets set for left and right */
 /* NOTE: for "block" element, the "height" or "width" gets set and "padding" or "margin"
    gets set for all 4 directions  */
+/* NOTE: Padding can work on all 4 sides of the "inline" but can overlap on top and bottom */

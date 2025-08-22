@@ -1,4 +1,4 @@
-/* 071203: */
+/* 13_03: */
 div
 {
     height:200px;
@@ -6,7 +6,7 @@ div
     background-color:pink;
 }
 
-/* 071204: */
+/* 03_04: */
 div
 {
     border-width: 5px;
@@ -15,6 +15,7 @@ div
 }
 h1
 {
+    /* width: 500px; */
     border-width: 8px;
     border-style: dashed;
     border-color: skyblue;
@@ -24,13 +25,13 @@ h1
     /* or border-left: 8px blue double*/
 }
 
-/* 071205: */
+/* 13_05: */
 div
 {
     border-radius: 15px;
 }
 
-/* 071206: */
+/* 13_06: */
 div
 {
     padding-top:50px;
@@ -48,7 +49,7 @@ button
 
 }
 
-/* 071207 */
+/* 13_07 */
 div
 {
     margin-bottom:20px;

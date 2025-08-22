@@ -1,0 +1,22 @@
+h1
+{
+    background-color: pink;
+    border: 2px solid black;
+    width: 33.33%; /*this "33.33%" will be as related to is parent and here h1's parent is "body"*/
+}
+
+#outer
+{
+    height: 400px;
+    width: 500px;
+    background-color: orange;
+    margin: 50px;
+}
+#inner
+{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 10%; /* this will say that its margin will be 10% the size(width) of its parent. and in this 
+                    case, its parent is div with "outer" id. so it will be 10% the size(width) of that.*/
+}

@@ -1,0 +1,14 @@
+div
+{
+    height:200px;
+    width:200px;
+    background-color:greenyellow;
+    margin:5px;
+    border:2px solid black;
+    display:inline-block;
+}
+
+/* yadi hame ek block element ko "display:inline" dete hai to wo inline jaise hi behave karne lag jata hai
+   i.e., na to uski height count hpgi, na weidth, or margin bhi bas left right se count hogi.
+   Now if we want ki hamara jo element jo element hai wo block se inline bhi ban jae or uski block wali
+   properties bhi wo follow kare to we can make it as "inline-block" */
