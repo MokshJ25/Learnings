@@ -42,3 +42,12 @@ div
     top: 100px; /*here, 100px is offset from top*/
     left: 100px; /*here, this 100px is offset from left*/
 }
+#sticky
+{
+    background-color: orange;
+    position: sticky;
+    top: 500px;
+    left: 500px;
+    /* yaha ye left or top ke offset bataenge ki jab top se 500px(here) ki gap baaki ho ot jab left ke 
+       500px(here) ki gap baaki ho tab apni jagah chhodna */
+}
