@@ -1,0 +1,15 @@
+div
+{
+    height:200px;
+    width:200px;
+    background-color:rgba(255,0, 0, 0.5);
+}
+
+#div2
+{
+    background-color: #ffa505;
+    opacity:0.5;
+}
+
+/* Alpha channel decides the opacity for the color(background color) only, while the opacity decides the 
+   opacity of all the elements(heading, texts, buttons, etc.) */

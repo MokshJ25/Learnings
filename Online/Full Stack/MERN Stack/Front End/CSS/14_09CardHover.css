@@ -12,14 +12,18 @@
 }
 img
 {
-    width:100%; /*jitni parent(div(here)) ki width(200px(here)) hai, utni hi width image ki bhi ho jae, i.e., 200px*/
-    border-radius: 5px 5px 0 0;
+    width:100%; /*jitni parent(div(here)) ki width(200px(here)) hai, utni hi width image ki bhi ho jae*/
+    border-radius: 5px 5px 0 0; /*sets radius for image just like the border. it also starts from top left*/
 }
 .desc
 {
-    padding: 0 5px 0 5px;
+    padding: 0 5px 0 5px; /*it goes like top, right, bottom, left.*/
 }
 .card:hover
 {
     box-shadow: 4px 8px 16px black;
+}
+h3
+{
+    text-align: center;
 }

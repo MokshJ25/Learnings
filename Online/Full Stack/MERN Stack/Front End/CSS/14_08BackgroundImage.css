@@ -1,0 +1,16 @@
+div
+{
+    width:400px;
+    height:200px;
+    background-color: teal;
+    margin: 10px auto;
+    background-image: url("C:/Users/HP/Desktop/Codes/Learnings/Online/Full Stack/MERN Stack/Img/14_08.jpeg");
+    background-size: cover;
+    /* background-size: contain/cover/auto;
+       contain: crop(×), scale(×), repeat(√) 
+       cover: crop(√), scale(×), repeat(×) 
+       auto: crop(×), scale(×), stratch(√) */
+    /* to get (√) symbol press and hold left alt type "251" in numpad(with numlock active) 
+       to get (×) symbol press and hold left alt type "0215" in numpad(with numlock active) */
+    color:white; /*text colour*/ 
+}

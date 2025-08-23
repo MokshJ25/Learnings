@@ -1,0 +1,44 @@
+div
+{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+    display: inline-block; 
+}
+
+#static
+{
+    background-color: orange;
+    position: static;
+    top: 100px;
+    left: 100px;
+    /*yaha "top" ya "left" ya "bottom" ya "right" kaam nahiu aaega kyuki abhi iskin position "static hai"*/
+}
+#relative
+{
+    background-color: orange;
+    position: relative;
+    top: 100px; /*here, 100px is offset from top*/
+    left: 100px; /*here, this 100px is offset from left*/
+}
+#absolute
+{
+    background-color: orange;
+    position: absolute;
+    top: 100px; /*here, 100px is offset from top position alloted to last ancestor or whole document*/
+    left: 100px; /*here, this is offset from left position alloted to last ancestor or whole document*/
+    /*since iske ancestor "section" ya "body" ko koi position alloted nahi thi to isne pure document ke
+      respect me dekha or top most and left most(of whole document) ko ideal maan lia */
+    /*jab kisi element par absolute position hoti hai tab wo element ki original position blank ho jati
+      hai or next element uski jafgah le sakta hai*/
+    }
+#fixed
+{
+    background-color: orange;
+    position: fixed;
+    top: 100px; /*here, 100px is offset from top*/
+    left: 100px; /*here, this 100px is offset from left*/
+}

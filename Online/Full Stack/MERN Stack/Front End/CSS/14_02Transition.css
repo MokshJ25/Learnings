@@ -1,0 +1,38 @@
+#div1
+{
+    height: 200px;
+    width: 200px;
+    background-color:red ;
+    transition: 2s; /*or we can write "transition-duratiom: 2s;"*/
+}
+
+#div1:hover
+{
+    background-color:blue ;
+    border-radius: 50%;
+} 
+
+#div2
+{
+    height: 100px;
+    width: 100px;
+    background-color:pink ;
+    margin: 0 auto;
+    transition:margin-top 2s ease-in 0.5s;
+    /* transition: (jis property par apply karna hai) (duration) (time-function) (delay)*/
+}
+
+#div2:hover
+{
+    border-radius: 50%;
+    margin-top: 400px;
+    background-color: magenta;
+    border-radius: 50%;
+}
+
+/* Some of the transition properties are:
+   1. transition-duration: ;
+   2. transition-delay: ;
+   3. transition-timing-function: linear/ease/steps/cubic ;
+   4. transition-property: ;
+   5. transition-behavior: ;  */

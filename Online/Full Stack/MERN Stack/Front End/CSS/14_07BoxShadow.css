@@ -1,0 +1,12 @@
+div
+{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(92, 92, 4);
+    margin:10px auto;
+    color: white;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(26, 26, 25);
+    /* here 5px shows the x offset(x-axis se kitna dur hogi). again 5px shows y offset(y-axis se kitna
+       dur hogi). 10px shows the blur radius(kitna bluee hogi). and then we give the colour of our shadow*/
+}
