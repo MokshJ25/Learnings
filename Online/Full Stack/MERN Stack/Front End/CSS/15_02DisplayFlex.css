@@ -1,0 +1,33 @@
+#container
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex; /*ye by default row direction me hi set rahega*/
+    flex-direction: column; /*by doing this we are making the direction of our flex elements as column*/
+    /* other flex-direction are: row(main axis, left to right), row-reverse(main axis, right to left), 
+       column(main axis, top to down), column-reverse(main axis, down to top) */
+}
+h1
+{
+    text-align:center
+}
+#container div
+{
+    height:100px;
+    width:300px;
+    /*jab hamara element to contiain karne wala container ko ham flex par set kar denge to uske andar ke 
+      elements flex elements ban jaenge or jab ham fex elements ho height wodth dete hai wo tab hi follo kar 
+      pate hai jab possible ho. yadi wo heihght width kisi flex property me adti hai to wo ignore ho jati 
+      hai. Jaise abhi flex-direction column ki hai lekin yaha hamne height 100px di hui hai, jo ki in 
+      elements ko container me fit in hone me dikkat banegi isile ye wali height ignor hogi or jo sahi se set 
+      kar paegi flex property woset ho jaegi. par yaha we can follow width to wo dhang se follow ho paegi*/
+      /*yadi jo height or width hamne elements ko di hai yadi wo container me overflow nahi ho rahi hai to
+      they will be as pwe their heigth and width par if they are overflowing then they will get set in 
+      accorfing to the continer to fit in properly  */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}

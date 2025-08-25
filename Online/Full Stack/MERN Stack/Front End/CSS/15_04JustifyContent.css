@@ -1,0 +1,162 @@
+/* NOTE: hamare elements ka order hamari "flex-direction" control karegi and space ko "jistify-content" 
+   control karega */
+
+#container1
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* Jitne bhi element hai wo main axis ke start ki taraf align ho jaenge. yani elements ka start or
+       axis ka start same ban jaega. this "flex-start" is by default */
+}
+h1
+{
+    text-align:center
+}
+#container1 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container2
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Jitne bhi element hai wo main axis ke end ki taraf align ho jaenge. yani elements ka end,
+       axis ke end ko match karega. jitne element hai wo main axis ke end ke taraf khisak jaenge */
+}
+h1
+{
+    text-align:center
+}
+#container2 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container3
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    /*Jitne bhi element hai wo main axis ke center ki taraf align ho jaenge. yani elements ka center,
+      axis ke center ko match karega. jitne element hai wo main axis ke center ke taraf khisak jaenge */
+}
+h1
+{
+    text-align:center
+}
+#container3 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container4
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /*Jitne bhi element hai wo main axis ki taraf align ho jaenge. or yadi elements set hone ke baad 
+      space bachti hai(elements ki height ya width flex container me contain ho jati hai or kuch jagah
+      bach jaati hai) to ye elements ke beech me space deke unko equally spread kar deta haintaki wo bachi
+      hui jagah bhi bhar jae. jitne element hai wo main axis ke end ke taraf khisak jaenge with space
+      between them. YADI EXTRA SPACE BACH RAHI HAI TO HI*/
+}
+h1
+{
+    text-align:center
+}
+#container4 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container5
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    /*ye bhi same "space-between" ke jaise hi kaam karta hai par ye start element and end element ke shuru
+      or aakhri me bhi space de deta hai respectively. this starting and ending space is half od the space 
+      between the other elements.*/
+}
+h1
+{
+    text-align:center
+}
+#container5 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container6
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    /*ye bhi same "space-around" ke jaise hi kaam karta hai par ye start element and end element ke shuru
+      or aakhri me bhi equal space de deta hai respectively like the other element's space.*/
+}
+h1
+{
+    text-align:center
+}
+#container6 div
+{
+    height:100px;
+    width:100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}

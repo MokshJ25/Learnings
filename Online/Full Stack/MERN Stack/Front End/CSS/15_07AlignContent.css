@@ -1,0 +1,259 @@
+#container1
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+h1
+{
+    text-align:center
+}
+#container1 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container2
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+h1
+{
+    text-align:center
+}
+#container2 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container3
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+h1
+{
+    text-align:center
+}
+#container3 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container4
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+h1
+{
+    text-align:center
+}
+#container4 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container5
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+h1
+{
+    text-align:center
+}
+#container5 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container6
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+}
+h1
+{
+    text-align:center
+}
+#container6 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+} 
+/* --------------------------------------------------- */
+#container7
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+h1
+{
+    text-align:center
+}
+#container7 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container8
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+h1
+{
+    text-align:center
+}
+#container8 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container9
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+h1
+{
+    text-align:center
+}
+#container9 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container10
+{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
+h1
+{
+    text-align:center
+}
+#container10 div
+{
+    height:100px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
