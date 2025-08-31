@@ -1,0 +1,186 @@
+#container1
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+#ind1
+{
+    flex-basis: 50px;
+}
+#blu1
+{
+    flex-basis: 500px;
+}
+h1
+{
+    text-align:center
+}
+#container1 div
+{
+    height:50px;
+    width:270px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container2
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+#ind2
+{
+    flex-basis: 30px;
+}
+#blu2
+{
+    flex-basis: 270px;
+}
+h1
+{
+    text-align:center
+}
+#container2 div
+{
+    height:50px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container3
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+#ind3
+{
+    flex-grow:1;
+}
+#blu3
+{
+    flex-grow:2;
+}
+#grn3
+{
+    flex-grow:10;
+    max-width: 150px;
+    /* here we have given the flex-grow 10 means it will grow 10 times the others but also we have given that max-width can
+       be 100px, so it will not cross 100px  */
+}
+#ylo3
+{
+    min-width: 100px;
+    /* here, this element cant be less than 100px, chahe kuch ho */
+}
+h1
+{
+    text-align:center
+}
+#container3 div
+{
+    height:50px;
+    width:50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container4
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    align-items: flex-start; 
+}
+#ind4
+{
+    flex-shrink: 1;
+}
+#blu4
+{
+    flex-shrink: 2;
+}
+h1
+{
+    text-align:center
+}
+#container4 div
+{
+    height:50px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+/* --------------------------------------------------- */
+#container5
+{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    align-items: flex-start; 
+}
+#ind5
+{
+    flex-shrink: 1;
+}
+#blu5
+{
+    flex-shrink: 2;
+}
+h1
+{
+    text-align:center
+}
+#container5 div
+{
+    height:300px;
+    width:300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;;
+}
+
+/* NOTE: flex-grow and flex-shrink are both unotless quantity */
+
+/* Flex shorthand:
+   flex: flex-grow(unitless)|flex-shrink(unitless)|flex-basis; */
