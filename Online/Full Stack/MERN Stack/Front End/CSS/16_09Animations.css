@@ -1,0 +1,54 @@
+.box
+{
+    height: 200px;
+    width: 400px;
+    background-color: pink;
+
+    /* animation-name: fontAnimation; */
+    /* animation-name: colorAnimation; */
+    animation-name: widthAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3 /*or "infinite"*/; /*It tells the frequency of the animation. it can be "infinite" also*/
+    animation-direction: alternate; /*irs value can be "normal", "reverse", "alternate", "alternate-re"*/
+    
+ /* we can write these all things in a shorthand, so instead of above these many lines we can write like:
+    "animation: widthAnimation 2s ease-in 0s 3 alternate";*/
+}
+
+@keyframes fontAnimation
+{
+    from
+    {
+        font-size:20px; /*we can set various other properties also in this section, together*/
+    }
+    to
+    {
+        font-size:40px;/*we can set various other properties also in this section, together*/
+    }
+}
+@keyframes colorAnimation
+{
+    from
+    {
+        background-color:green;
+    }
+    to
+    {
+        background-color:blue;
+    }
+}
+@keyframes widthAnimation
+{
+    from
+    {
+        width:10px;
+        border-radius: 0px;
+    }
+    to
+    {
+        width:400px;
+        border-radius: 30px;
+    }
+}

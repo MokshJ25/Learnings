@@ -1,0 +1,51 @@
+.container1
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.item1
+{
+    /* height:50px;
+    width:100px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-----------------------------------------------*/
+.container2
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*we can also write it as: "grid-template-columns: 1fr 1fr 1fr;"*/
+}
+.item2
+{
+    /* height:50px;
+    width:100px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-----------------------------------------------*/
+.container3
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.item3
+{
+    /* height:50px;
+    width:100px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}

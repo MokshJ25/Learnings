@@ -1,0 +1,164 @@
+h1
+{
+    text-align: center;
+}
+/*-----------------------------------------------------
+JUSTIFY IS USED FOR HORIZOMNTAL BEHAVIOUR
+-----------------------------------------------------*/
+.container1
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: start;/*we can also use "center", "end", "stretch", "baseline", etc.*/
+
+}
+.item1
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-----------------------------------------------------*/
+.container2
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: end;
+
+}
+.item2
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-----------------------------------------------------*/
+.container3
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+
+}
+.three
+{
+    justify-self: end;
+}
+.item3
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-----------------------------------------------------
+ALIGN IS USED FOR VERTICAL BEHAVIOUR
+-----------------------------------------------------*/
+.container4
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items:center; /*we can also use "start", "end", "stretch", "baseline", etc.*/
+
+}
+.four
+{
+    align-self: end;
+}
+.item4
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+/*-------------------------------------------------------------------
+PLACE IS USED FOR VERTICAL AS WELL AS HORIZONTAL BEHAVIOUR TOGETHER
+---------------------------------------------------------------------*/
+.container5
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    place-items:center; /*we can also use "start", "end", "stretch", "baseline", etc.*/
+
+}
+.five
+{
+    place-self: end;
+}
+.item5
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------
+INLINE-GRID IS A DISPLAY PROPERTY UED TO MAKE DISPLAY AS INLINE PROPERTY
+--------------------------------------------------------------------------*/
+.container6
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: inline-grid;
+    margin: 10px auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    place-items:center; /*we can also use "start", "end", "stretch", "baseline", etc.*/
+
+}
+.item6
+{
+    height:50px;
+    width:100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+

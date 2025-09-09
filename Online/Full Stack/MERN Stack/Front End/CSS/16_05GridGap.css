@@ -1,0 +1,21 @@
+.container
+{
+    height: 300px;
+    width: 600px;
+    background-color: skyblue;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    /*Instead of above two lines we can write: "grid-gap:10px 10px;" or "grid-gap:10px;" to get 10px gap in row and column*/
+
+}
+.item
+{
+    /* height:50px;
+    width:100px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}

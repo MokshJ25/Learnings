@@ -1,0 +1,28 @@
+.box
+{
+    height: 200px;
+    width: 400px;
+    background-color: pink;
+    
+    animation: ColorAnimation 4s ease-in 0s infinite alternate;
+}
+
+@keyframes ColorAnimation
+{
+    0%
+    {
+        background-color:red;
+    }
+    50%
+    {
+        background-color:green;
+    }
+    80%
+    {
+        background-color:yellow;
+    }
+    100%
+    {
+        background-color:blue;
+    }
+}

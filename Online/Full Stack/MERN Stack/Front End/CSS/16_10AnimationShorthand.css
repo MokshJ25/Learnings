@@ -1,0 +1,24 @@
+.box
+{
+    height: 200px;
+    width: 400px;
+    background-color: pink;
+    
+    animation: fontAndColorAnim 2s ease-in 0s infinite alternate;
+}
+
+@keyframes fontAndColorAnim
+{
+    from
+    {
+        font-size:20px; /*we can set various other properties also in this section, together, like:*/
+        background-color:green;
+        border-radius: 0px;
+    }
+    to
+    {
+        font-size:40px;/*we can set various other properties also in this section, together*/
+        background-color: blue;
+        border-radius: 50px;
+    }
+}
