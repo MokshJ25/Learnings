@@ -1,0 +1,84 @@
+h1
+{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media(width:500px)
+{
+    #OneH1
+    {
+        background-color: pink;
+        border-radius: 15px;
+        /*it tells that jab hamari screen ka size 500px ho, hamari h1 ka bg. color pink ho jae or uski border curved ho jae
+          500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega*/
+    }
+    #OneDiv
+    {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        /*it tells that jab hamari screen ka size 500px ho, hamare div ka bg. color orange ho or uski height and width
+          100px ho jae. 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega or hamara div gayab ho jaega
+          (kyuki abhi hamara div khali hai(see in html file))*/
+    }
+}
+@media(min-width:500px)
+{
+    #TwoH1
+    {
+        background-color: magenta;
+        border-radius: 15px;
+        /*it tells that jab hamari screen ka size 500px ya usse zyada ho, hamari h1 ka bg. color pink ho jae or uski 
+          border curved ho jae 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega*/
+    }
+    #TwoDiv
+    {
+        height: 100px;
+        width: 100px;
+        background-color: magenta;
+        /*it tells that jab hamari screen ka size 500px ya usse zyada ho, hamare div ka bg. color orange ho or uski 
+          height and width 100px ho jae. 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega or hamara div gayab 
+          ho jaega (kyuki abhi hamara div khali hai(see in html file))*/
+    }
+}
+@media(max-width:500px)
+{
+    #ThreeH1
+    {
+        background-color: orange;
+        border-radius: 15px;
+        /*it tells that jab hamari screen ka size 500px ya usse kamho, hamari h1 ka bg. color pink ho jae or uski border 
+          curved ho jae 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega*/
+    }
+    #ThreeDiv
+    {
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+        /*it tells that jab hamari screen ka size 500px ya usse kamho, hamare div ka bg. color orange ho or uski height 
+          and width 100px ho jae. 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega or hamara div gayab ho jaega
+          (kyuki abhi hamara div khali hai(see in html file))*/
+    }
+}
+@media(min-width:500px) and (max-width:600px)
+{
+    #FourH1
+    {
+        background-color: green;
+        border-radius: 15px;
+        /*it tells that jab hamari screen ka size 500px se 600px ke beech ho, hamari h1 ka bg. color pink ho jae or uski border 
+          curved ho jae 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega*/
+    }
+    #FourDiv
+    {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        /*it tells that jab hamari screen ka size 500px ya usse kamho, hamare div ka bg. color orange ho or uski height 
+          and width 100px ho jae. 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega or hamara div gayab ho jaega
+          (kyuki abhi hamara div khali hai(see in html file))*/
+    }
+}
+/* We have applied these changes on three different sections, but instead we can apply it in a single also, so it will
+    change differently with different width */

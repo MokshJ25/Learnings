@@ -1,0 +1,23 @@
+.box
+{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+.one
+{
+    background-color: burlywood;
+    z-index: 1;
+    position: relative; /*yadi hamne yaha position nahi di hoti to z index kisi kaam ka nahi hota. also, yadi hamne yaha 
+                          position "static" ya default di hoti to bhi ye z-index kisi kaam ka nahi rehta.
+                          z-index can be positive and can be negative*/
+}
+.two
+{
+    background-color: brown;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}

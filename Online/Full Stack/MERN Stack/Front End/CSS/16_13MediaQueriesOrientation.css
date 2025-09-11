@@ -1,0 +1,26 @@
+h1
+{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media(orientation: landscape)
+{
+    h1
+    {
+        color: white;
+        background-color: pink;
+        border-radius: 15px;
+        /*it tells that jab hamari screen ka orientation jab landscape ho jae, hamari h1 ka bg. color pink ho jae or uski 
+          border curved ho jae 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega*/
+    }
+    div
+    {
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        /*it tells that jab hamari screen ka orientation jab landscape ho jae, hamare div ka bg. color orange ho or uski 
+          height and width 100px ho jae. 500px se thoda bhi kam ya zyada hoga to ye kaam nahi aaega or hamara div gayab ho jaega
+          (kyuki abhi hamara div khali hai(see in html file))*/
+    }
+}
