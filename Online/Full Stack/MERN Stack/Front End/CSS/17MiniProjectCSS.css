@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.main_box
+{
+    background: url("C:/Users/HP/Desktop/Codes/Learnings/Online/Full Stack/MERN Stack/Img/17photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute; /*since hamne ise "absolute" dia hai or iske kisi bhi parent ko koi position nahi di hai to yaha ab ye
+    pure page ke hisaab se set hoga*/
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;/*from this we can change the type of cursor on the element(when mouse hovers)*/
+    transition: all 0.15s linear;
+}
+.sidebar_menu
+{
+    position:fixed; /*position "fixed" di hai matlab iski position page ke hisaab se set hogi na ki iske parent ke hisaab se*/
+    left:-350px; /*this -ve sign btata hai ki x-axis par or left ki side move ho jao(here, ye screen se bahar ho jaega, obviosly)*/
+    height:100vh;
+    width:300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo
+{
+    position: absolute;
+    width:100%;/*since, iska parent div hai to "%" will occupy the % specified form that parent div*/
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height:60px;/*since, hamari logo class ke andar kuch content nahi hai(other than anchor tag) to uski height 0px hi aaegi
+                  or uspe kuch bhi shadow wagerah apply nahi ho paegi, therefor we are giving it a height explicitly*/
+}
+.sidebar_menu .logo a /*yaha jo styke denge wo sirf "sidebar_menu" class ke "logo" class ke andar wale "a"(anchor) tag par hogi*/
+{
+    position: absolute;
+    left:50px;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .btn_two i
+{
+    color:grey;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;/*since hamne ise "absolute" dia hai or iske kisi bhi parent(div) ko position di hai to yaha ab ye us 
+                         parent ke hisaab se set hoga*/
+    left: 90%;
+    line-height: 60px;
+    cursor: pointer;/*from this we can change the type of cursor on the element(when mouse hovers)*/
+    transition: all 0.15s linear;
+}
+.sidebar_menu .menu
+{
+    color: white;
+    position: absolute;
+    width:100%; /*it says that iska parent(sidebar_menu class wala div) me jitni width hai utni puri occupy karle*/
+    top:80px;
+}
+.sidebar_menu .menu li
+{
+    margin-top: 6px;
+    padding: 10px 20px; /*it says top and bottom se 10px and left and right se 20px*/
+    color: white;
+}
+.sidebar_menu .menu li,a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebar_menu .menu i
+{
+    padding-right: 8px;
+}
+.sidebar_menu .social_media
+{
+    position:absolute;
+    left:25%;
+    bottom:50px;
+}
+.sidebar_menu .social_media i
+{
+    opacity:0.5;
+    padding-right: 8px;
+}
+#check
+{
+    display:none; /*screen se kisi chiz ko gaayab karna ho to uska "display" none par set kardo. isse wo chiz gaayab bhi ho
+    jaegi or uski reserved */
+}
+/*---------------------------------------------------------------------*/
+.sidebar_menu .menu li:hover
+{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn_one i:hover
+{
+    font-size: 35px;
+}
+.btn_two i:hover
+{
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover
+{
+    opacity: 1;
+    transform: scale(1.1)
+}
+/*---------------------------------------------------------------------*/
+#check:checked ~ .sidebar_menu
+{
+    left:0;
+}
+#check:checked ~ .btn_one
+{
+    opacity:0;
+}
+#check:not(:checked)~ .btn_one /*we can use ":not(:checked)" as "unchecked" {for the checkbox}*/
+{
+    /* opacity:0; */
+    transition: all 0.3s linear 0.3s;
+}
