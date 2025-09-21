@@ -1,0 +1,12 @@
+.container
+{
+    background-color: blanchedalmond;
+}
+.container-md /*it will change till 768px, and when size will decrease forther, it wont shrink*/
+{
+    background-color: grey;
+}
+.container-fluid /*it will hold constant of 100% width in every case*/
+{
+    background-color: orange;
+}
