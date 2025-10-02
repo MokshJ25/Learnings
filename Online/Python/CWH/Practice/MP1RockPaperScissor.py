@@ -1,3 +1,5 @@
+#Create a game with the concept of random number
+
 '''
 We will choose:
 -1: for rock
