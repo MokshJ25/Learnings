@@ -1,0 +1,1 @@
+from C12_09NameMain1 import myFunc
