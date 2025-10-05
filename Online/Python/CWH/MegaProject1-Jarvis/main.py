@@ -92,7 +92,7 @@ def aiProcess(c):
     completion=client.chat.completions.create(
     model="gpt-4o-mini",
     messages= [
-        {"role": "system", "content": "You are a virtual assistant and partner named 'Jarvis', skilled in general tasks like alexa and googhle assistannt, but answer generally in short."},
+        {"role": "system", "content": "You are a virtual assistant and partner named 'Jarvis', skilled in general tasks like alexa and google assistannt, but answer generally in short."},
         {"role": "user", "content": c}
     ])
 
