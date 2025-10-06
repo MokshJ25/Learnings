@@ -102,7 +102,7 @@ time.sleep(1.0)
 pyautogui.click(595, 660)
 time.sleep(1.0)
 
-# --- MAIN LOOP ---
+#    MAIN LOOP
 while True:
     chats = selectText()
     
@@ -127,7 +127,7 @@ while True:
         pyautogui.hotkey('ctrl', 'v')
         time.sleep(1)
 
-        # --- AUTO SEND COUNTDOWN POPUP ---
+        #auto send countdown popups
         should_send = countdown_send_popup()
 
         if should_send:
@@ -145,8 +145,8 @@ while True:
             time.sleep(0.3)
             show_popup("Message cancelled", duration=1)
 
-        time.sleep(5)  # wait before next iteration
+        time.sleep(5)
         continue
     else:
-        time.sleep(5)  # slower check to reduce CPU usage on old PC
+        time.sleep(5)
         continue
