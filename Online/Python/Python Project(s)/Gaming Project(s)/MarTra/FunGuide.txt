@@ -1,0 +1,14 @@
+.) blit():
+The blit function in Pygame is used to draw one image (or Surface object) onto another. The term "blit" is an abbreviation of Block Image Transfer.
+The blit function works by copying the pixels from a source Surface to a destination Surface. It does not create a link between the two surfaces; it just changes the color of the pixels on the destination surface.
+You call the method on the destination surface, passing the source surface and the destination coordinates as arguments. For instance, screen.blit(image, (x, y)) copies image onto the screen.
+
+.) convert_alpha():
+The convert_alpha() method in Pygame is used to optimize a surface for faster blitting (drawing) to the screen while retaining per-pixel transparency (alpha channel). It is almost always called immediately after loading an image or creating a new.
+
+.) class Xyz(pygame.sprite.Sprite):
+The pygame.sprite.Sprite class is a base class provided by the Pygame library to help organize and manage visible game objects efficiently. It is not meant to be used on its own, but rather subclassed to create custom game entities like characters, enemies, or projectiles.
+
+.) enumerate()
+The Python enumerate() function is a built-in function that adds a counter to an iterable (like a list, tuple, or string) and returns it as an enumerate object, which produces pairs of an index and the corresponding element. This simplifies looping when you need both the item's value and its position (index), eliminating the need to manually manage a separate counter variable. 
+syntax: enumerate(iterable, start=0)
