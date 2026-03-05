@@ -11,6 +11,11 @@
 **/out/
 /target/
 **/*.class
+.idea/
+target/
+
+### Python ###
+*.pyc
 
 ### ignore compiled c++ ###
 *.exe

@@ -20,10 +20,13 @@ FPS=60
 
 #define game variables
 GRAVITY=0.75
+SCROLL_THRESH = 200 #distance player can get to edge of screen before start to scroll
 ROWS=16 #this is fixed in the loaded csv file
 COLS=150 #this is fixed in the loaded csv file
 TILE_SIZE=SCREEN_HEIGHT//ROWS
 TILE_TYPES = 21 # it is also fixed as we have used 21 types of tile
+screen_scroll = 0 #main variable for scrolling
+bg_scroll = 0
 level=1
 
 #Definig the player action variables
@@ -34,6 +37,11 @@ grenade=False
 grenade_thrown=False 	
 
 ##load images
+#Load image for background
+pine1_img=pygame.image.load('img/Background/pine1.png').convert_alpha()
+pine2_img=pygame.image.load('img/Background/pine2.png').convert_alpha()
+mountain_img=pygame.image.load('img/Background/mountain.png').convert_alpha()
+sky_img=pygame.image.load('img/Background/sky_cloud.png').convert_alpha()
 #store tiles in a list
 img_list=[]
 for x in range(TILE_TYPES):
@@ -49,7 +57,6 @@ health_box_img=pygame.image.load('img/icons/health_box.png').convert_alpha()
 ammo_box_img=pygame.image.load('img/icons/ammo_box.png').convert_alpha()
 grenade_box_img=pygame.image.load('img/icons/grenade_box.png').convert_alpha()
 item_boxes={'Health':health_box_img, 'Ammo':ammo_box_img,'Grenade':grenade_box_img} #Creating a dictionary
-
 
 
 #Defining the colours:
@@ -68,7 +75,13 @@ def draw_text(text, font, text_col, x, y):
 
 def draw_bg():#This method will help to give the background and referesh
 	screen.fill(BG)
+	width=sky_img.get_width() #give the width of image(to use it to repeat the bg image)
+	for x in range(5):
 	# pygame.draw.line(screen, RED, (0,300), (SCREEN_WIDTH,300))#to give a temporary line as a base on the screen it takes 4 arguments, 1st the on which window, 2nd the colour of line, 3rd is start coordinates, 4th end coordinates
+		screen.blit(sky_img,((x * width) - bg_scroll * 0.5,0))
+		screen.blit(mountain_img,((x * width) - bg_scroll * 0.6, SCREEN_HEIGHT - mountain_img.get_height() - 300))
+		screen.blit(pine1_img,((x * width) - bg_scroll * 0.7, SCREEN_HEIGHT - pine1_img.get_height() - 150))
+		screen.blit(pine2_img,((x * width) - bg_scroll * 0.8, SCREEN_HEIGHT - pine2_img.get_height()))
 
 ##Setting the player:
 class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to pygame and is called sprite class(ref. FunGuide)
@@ -130,6 +143,7 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 
 	def move(self, moving_left, moving_right):#will give the movement to the soliders(images of the soldier)
 		#reset movement variables
+		screen_scroll=0
 		dx=0
 		dy=0
 		#assign movement variables if moving left or right
@@ -151,12 +165,17 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 		self.vel_y+=GRAVITY
 		if self.vel_y>10:
 			self.vel_y
-		dy+=self.vel_y
+		dy += self.vel_y
+
 		#check for  collision
-		for tile in world.obstacle_list: #check for collision with obstacles and not allow to pass through
+		for tile in world.obstacle_list: #check collision with obs. & not allow pass throu
 			#check for collision in x direction
 			if tile[1].colliderect(self.rect.x + dx, self.rect.y, self.rect.width, self.rect.height): #"tile" stores image at index "0" and rectangle at index "1"
 				dx=0 #stop the player to move in x if collision
+				#if the ai has hit the wall then make it turn around
+				if self.char_type=='enemy':
+					self.direction *= -1
+					self.move_counter = 0
 			#check for collision in y direction
 			if tile[1].colliderect(self.rect.x, self.rect.y + dy, self.rect.width, self.rect.height): 
 				#check if below the ground, i.e. jumping
@@ -169,13 +188,25 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 					self.in_air=False #to set the player on the floor after colliding with the floor
 					dy= tile[1].top - self.rect.bottom 
 
-		#updating rectangle position
+		#check if going off the edge of the screen
+		if self.char_type== "player":
+			if self.rect.left + dx < 0 or self.rect.right > SCREEN_WIDTH:
+				dx=0
+				
+		#updating rectangle(player) position
 		self.rect.x+=dx
 		self.rect.y+=dy 
 
+		#update scroll based on player position
+		if self.char_type== "player": #check the scroll happens only by player move
+			if (self.rect.right > SCREEN_WIDTH - SCROLL_THRESH and bg_scroll < (world.level_length * TILE_SIZE) - SCREEN_WIDTH) or (self.rect.left < SCROLL_THRESH and bg_scroll > abs(dx)):
+				self.rect.x -= dx #stop the player to move further when it reaches the scroll threshold and that time we will make bg to move
+				screen_scroll= -dx #to scroll the screen in opposite direction of player movement to create ther illusion of scrolling
+		return screen_scroll
+
 	def shoot(self):
 		if self.shoot_cooldown == 0 and self.ammo>0:
-			self.shoot_cooldown =20
+			self.shoot_cooldown = 20
 			bullet= Bullet(self.rect.centerx + (0.75*self.rect.size[0]*self.direction),self.rect.centery, self.direction) 
 			#creating the instance of bullet class. "player.rect.size[0]" gives the size of the rectangle and "size[0]" means x size(width)
 			bullet_group.add(bullet) 
@@ -185,10 +216,10 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 	def ai(self):
 		if self.alive and player.alive:
 			#idle state
-			if self.idling == False and random.randint(1,200) == 1:
+			if self.idling == False and random.randint(1, 200) == 1:
 				self.update_action(0) #to turn the animation to the idle standing state as "0" means idle
 				self.idling= True
-				self.idling_counter = 100
+				self.idling_counter = 50 
 			#check if the ai is near the player
 			if self.vision.colliderect(player.rect): #"yadi vision rectangle collide hota hai player ke rectangle se"
 				#stop running and face the player
@@ -197,7 +228,7 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 				self.shoot()
 
 			else:
-				#non-odle state
+				#non-idle state
 				if self.idling == False:
 					if self.direction==1:
 						ai_moving_right=True
@@ -218,6 +249,9 @@ class Soldier(pygame.sprite.Sprite): #it gives extra functionality related to py
 					self.idling_counter -= 1
 					if self.idling_counter <= 0:
 						self.idling = False  
+
+		#scroll
+		self.rect.x += screen_scroll
 
 
 	def update_animation(self):
@@ -265,6 +299,7 @@ class World():
 		self.obstacle_list = [] #this will contain the tiles which will be solid and will not allow soldier to pass through
 
 	def process_data(self,data):
+		self.level_length = len(data[0]) #gives the length of a level/row
 		#iterate through each value in level data file 
 		for y, row in enumerate(data): #(ref. FunGuide for enumerate())
 			for x, tile in enumerate(row):
@@ -304,6 +339,7 @@ class World():
 
 	def draw(self):
 		for tile in self.obstacle_list:
+			tile[1][0] += screen_scroll #{not understand}
 			screen.blit(tile[0], tile[1]) #{not understand} 
 
 
@@ -314,6 +350,9 @@ class Decoration(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		self.rect.midtop = (x + TILE_SIZE // 2, y + (TILE_SIZE-self.image.get_height()))
 
+	def update(self):
+		self.rect.x += screen_scroll
+
 
 class Water(pygame.sprite.Sprite):
 	def __init__(self, img, x, y):
@@ -321,6 +360,9 @@ class Water(pygame.sprite.Sprite):
 		self.image = img
 		self.rect = self.image.get_rect()
 		self.rect.midtop = (x + TILE_SIZE // 2, y + (TILE_SIZE-self.image.get_height()))
+
+	def update(self):
+		self.rect.x += screen_scroll
 
 
 class Exit(pygame.sprite.Sprite):
@@ -330,6 +372,8 @@ class Exit(pygame.sprite.Sprite):
 		self.rect = self.image.get_rect()
 		self.rect.midtop = (x + TILE_SIZE // 2, y + (TILE_SIZE-self.image.get_height()))
 
+	def update(self):
+		self.rect.x += screen_scroll
 
 
 class ItemBox(pygame.sprite.Sprite):
@@ -341,6 +385,8 @@ class ItemBox(pygame.sprite.Sprite):
 		self.rect.midtop=(x+TILE_SIZE//2, y+(TILE_SIZE-self.image.get_height()))
 
 	def update(self):
+		#scroll
+		self.rect.x += screen_scroll
 		#check if the player has picked up the box
 		if pygame.sprite.collide_rect(self, player):
 			#check what kind of box it was
@@ -384,8 +430,8 @@ class Bullet(pygame.sprite.Sprite):
 		self.direction=direction #this "direction" is same as of the player's
 
 	def update(self):
-		#move bullet
-		self.rect.x+=(self.direction*self.speed)
+		#scroll
+		self.rect.x+=(self.direction*self.speed) + screen_scroll
 		#check if bullet has gone off screen
 		if self.rect.right<0 or self.rect.left>SCREEN_WIDTH:
 			self.kill()  
@@ -445,7 +491,7 @@ class Grenade(pygame.sprite.Sprite):
 			
 
 		#update grenade position
-		self.rect.x += dx
+		self.rect.x += dx + screen_scroll
 		self.rect.y += dy  
 		#countdown timer
 		self. timer -= 1
@@ -479,6 +525,7 @@ class Explosion(pygame.sprite.Sprite):
 		self.counter=0 #this will control the animation
 
 	def update(self):
+		self.rect.x += screen_scroll #scroll
 		EXPLOSION_SPEED=4 #cooldown for explosion
 		#update explosion animation
 		self.counter += 1
@@ -616,9 +663,9 @@ while run:
 			player.update_action(1)# 1 means run
 		else:
 			player.update_action(0)# 0 means idle
-	
-	#Moving the player image on the screen:
-	player.move(moving_left,moving_right)
+		screen_scroll = player.move(moving_left,moving_right) #Moving the player image on the screen
+		bg_scroll -= screen_scroll #scroll the bg as well with the player movement
+		
 
 	for event in pygame.event.get():
 		#quit game
