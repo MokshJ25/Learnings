@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --background: 40 20% 97%;
+    --foreground: 220 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 12%;
+
+    --primary: 35 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 35 60% 95%;
+    --accent-foreground: 35 85% 30%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 35 85% 50%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 220 20% 14%;
+    --sidebar-foreground: 220 10% 80%;
+    --sidebar-primary: 35 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 18% 20%;
+    --sidebar-accent-foreground: 220 10% 90%;
+    --sidebar-border: 220 18% 22%;
+    --sidebar-ring: 35 85% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(35, 85%, 50%), hsl(25, 90%, 45%));
+    --gradient-surface: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(40, 20%, 97%));
+    --shadow-sm: 0 1px 2px 0 hsl(220 20% 12% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 20% 12% / 0.07), 0 2px 4px -2px hsl(220 20% 12% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(220 20% 12% / 0.08), 0 4px 6px -4px hsl(220 20% 12% / 0.04);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .shadow-surface {
+    box-shadow: var(--shadow-md);
+  }
+  .shadow-surface-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+}
