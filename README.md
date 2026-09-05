@@ -6,28 +6,21 @@ It's neatly structured by topics and learning sources for easy navigation and fu
 
 ## Folder Structure
 - `Online/`
-    - `C++`:Learning basics, core and OOP, few practice files.
+    - `Python`: Learning various modules, algorithms, and concepts of Python.
+        - `CWH`
+        - `Python Project(s)`
     - `Java`:Learning with hands-on practice.
         - `Java Project(s)`
         - `Video 1`
         - `Video 2`
         - `Video 3`
-    - `Git`:Git & GitHub practice and experiments.
-    - `Python`: Learning various modules, algorithms, and concepts of Python.
-        - `CWH`
-        - `Python Project(s)`
-    - `SQL`: Learning quesries and databases.
     - `Full Stack/`
         - `AC MERN Stack/`
-            - `Front End/`
-                - `HTML`
-                - `CSS`
-            - `Img`
-            - `Practice`
         -  `CAC Tgm (23)`
-            - `HTML`
         -  `Python Tgm (22)`
-            - `Learn`
+    - `C++`:Learning basics, core and OOP, few practice files.
+    - `Git`:Git & GitHub practice and experiments.
+    - `SQL`: Learning quesries and databases.
 - `Projects`
     - `Jain Steel House`
 OTHERS ARE BREWING.. STAY TUNED!
