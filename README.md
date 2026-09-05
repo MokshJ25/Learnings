@@ -6,15 +6,30 @@ It's neatly structured by topics and learning sources for easy navigation and fu
 
 ## Folder Structure
 - `Online/`
-    - `Java`:Completed learning with hands-on practice.
-    - `C++`:Completed basics, core and OOP, few practice files.
-    - `Git`:Git & GitHub practice and experiments
+    - `C++`:Learning basics, core and OOP, few practice files.
+    - `Java`:Learning with hands-on practice.
+        - `Java Project(s)`
+        - `Video 1`
+        - `Video 2`
+        - `Video 3`
+    - `Git`:Git & GitHub practice and experiments.
+    - `Python`: Learning various modules, algorithms, and concepts of Python.
+        - `CWH`
+        - `Python Project(s)`
+    - `SQL`: Learning quesries and databases.
     - `Full Stack/`
-        - `MERN Stack/`
+        - `AC MERN Stack/`
             - `Front End/`
                 - `HTML`
                 - `CSS`
-              
+            - `Img`
+            - `Practice`
+        -  `CAC Tgm (23)`
+            - `HTML`
+        -  `Python Tgm (22)`
+            - `Learn`
+- `Projects`
+    - `Jain Steel House`
 OTHERS ARE BREWING.. STAY TUNED!
 
 ### Purpose of This Repository
