@@ -22,7 +22,8 @@ It's neatly structured by topics and learning sources for easy navigation and fu
     - `Git`:Git & GitHub practice and experiments.
     - `SQL`: Learning quesries and databases.
 - `Projects`
-    - `Jain Steel House`
+    - `Jain Steel House` A completely demand based, industry level, inventory and billing management system.  
+
 OTHERS ARE BREWING.. STAY TUNED!
 
 ### Purpose of This Repository
