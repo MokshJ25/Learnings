@@ -6,15 +6,24 @@ It's neatly structured by topics and learning sources for easy navigation and fu
 
 ## Folder Structure
 - `Online/`
-    - `Java`:Completed learning with hands-on practice.
-    - `C++`:Completed basics, core and OOP, few practice files.
-    - `Git`:Git & GitHub practice and experiments
+    - `Python`: Learning various modules, algorithms, and concepts of Python.
+        - `CWH`
+        - `Python Project(s)`
+    - `Java`:Learning with hands-on practice.
+        - `Java Project(s)`
+        - `Video 1`
+        - `Video 2`
+        - `Video 3`
     - `Full Stack/`
-        - `MERN Stack/`
-            - `Front End/`
-                - `HTML`
-                - `CSS`
-              
+        - `AC MERN Stack/`
+        -  `CAC Tgm (23)`
+        -  `Python Tgm (22)`
+    - `C++`:Learning basics, core and OOP, few practice files.
+    - `Git`:Git & GitHub practice and experiments.
+    - `SQL`: Learning quesries and databases.
+- `Projects`
+    - `Jain Steel House` A completely demand based, industry level, inventory and billing management system.  
+
 OTHERS ARE BREWING.. STAY TUNED!
 
 ### Purpose of This Repository
