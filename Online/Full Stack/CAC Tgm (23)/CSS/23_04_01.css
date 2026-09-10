@@ -1,0 +1,15 @@
+ /* Use of some properties like:
+ -border-radius
+ -background-color
+ -color
+ -font-size
+ -font-weight */
+ 
+ button
+        {
+            border-radius: 20px;
+            background-color: red;
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+        }

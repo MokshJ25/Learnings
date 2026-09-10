@@ -1,0 +1,21 @@
+p
+{
+    font-size:40px;
+}
+
+
+#para15
+{
+    position:absolute;/*it tells that ab is element ki koi fixed static position nahi hai, ham ab ise screen par kahi bhi fit kar sakte hai within its parent*/
+    top:1200px;
+    left: 100px;
+}
+#para1
+{
+    position:fixed; /*it will fix the element on the screen and when the page will move so this element eill also move with the screen*/
+}
+#para5
+{
+    position:sticky;
+    top:0;/* "top" defines where a sticky element locks in place relative to the viewport during scrolling*/
+}

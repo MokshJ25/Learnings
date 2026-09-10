@@ -1,0 +1,50 @@
+<!-- Introduction and use of Use of inline. internal, and external CSS 
+ Use of some tags like:
+ -link
+ -button
+ -style
+ 
+ Use of some properties like:
+ -rel
+ -href
+ -background-color
+ -color
+ -font-size
+ -border
+ -border-radius
+ 
+ use of some value like:
+ -stylesheet-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_04_01</title>
+    <link rel="stylesheet" href="..\CSS\23_04_01.css"><!--It is External CSS-->
+    <style> 
+        p
+        {
+            background-color:pink;
+            color:rgb(239, 255, 8);
+            font-size: 20px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+        .abc
+        {
+            background-color: black;
+            color:orange;
+        }<!--here we have used class selector-->
+    </style><!--It is Internal CSS-->
+</head>
+<body>
+    <h1 class="abc">Hi</h1>
+    <p>Hello, World!</p>
+    <p class="abc">This paragraph contains same class as h1</p>
+    <button style="background-color: olive; color:white;">Click Me</button><!--It is Inline CSS-->
+    <button style="background-color: transparent; color:red; cursor: pointer;">Click Me</button>
+    <button>Click Me</button>
+</body>
+</html>  

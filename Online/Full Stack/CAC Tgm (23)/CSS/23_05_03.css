@@ -1,0 +1,25 @@
+/* Use of some properties like:
+-box-sizing. 
+
+Use of some values like:
+-content-box
+-border-box */
+
+#div1
+{
+    box-sizing:content-box; /*This is by defalt behaviour min which the height and width given to the div will onlt be distributed to the content section only in the box, while the padding, border and margin will occupy the space on the top of the height and width given*/
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+    padding:10px;
+    margin: 10px;
+}
+#div2
+{
+    box-sizing:border-box; /*This is the behaviour in which the height and width given to the div will be distributed to the content section, padding and border section of the box.(The margin will occupy the space on the top of the height and width given)*/
+    border: 5px solid red;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding:10px;
+}

@@ -1,0 +1,58 @@
+/* Concept of Grid Layout and Use of properties like: -display=grid;
+-grid-template-columns
+-grid-template-rows
+-grid-gap
+-grid-row-start
+-grid-row-end
+-grid-column-start
+-grid-column-end
+-grid-row
+-grid-column
+-grid-area. 
+
+Use of some values like:
+-grid
+-span */
+
+.parent1
+{
+    border:2px solid blue;
+    padding:20px;
+    display:grid; /*It converts the parent div into a grid, due to which its affcting its childs*/
+    grid-template-columns:80px 100px 100px 80px; /*with "grid-template-columns" property, we can manipulate the number of columns of the grid*/
+    grid-template-rows: repeat(8,40px); /*with "grid-template-rows" property, we can manipulate the number of rows of the grid. and with the "repeat(no.,px)" we can make many rows or columns in short.*/
+    grid-gap:15px;
+}
+
+.child1
+{
+    border: 2px dashed black;
+    padding: 5px;
+    margin:5px;
+    
+}
+
+#child1_1
+{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#child1_10
+{
+    grid-row: 7/9; /*"grid-row: start/end; is the short hand for "grid-row-start" and  "grid-row-end"*/
+    grid-column: 3/5; /*grid-column: start/end; is the short hand for "grid-column-start" and  "grid-column-end*/
+}
+
+#child1_9
+{
+    grid-column-end: span 4; /*"span" means it doesnt matter that kahi se bhi start hua ho, "4" means 4 column faila lo*/
+}
+
+#child1_8
+{
+    grid-area: 5/2/5/5; /* "grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-end" is the short hand for "grid-row-start","grid-column-start","grid-row-end","grid-column-end" */
+}
+

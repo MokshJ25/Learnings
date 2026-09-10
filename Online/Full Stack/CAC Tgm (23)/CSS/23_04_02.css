@@ -1,0 +1,73 @@
+/* Use of some properties like: 
+-display:flex;
+-justify-content
+-align-items
+-flex-wrap
+-gap
+-flex
+-flex-direction
+-order 
+
+Use of some values like:
+-flex*/
+
+div
+{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.parent
+{
+    display: flex; /*It converts the parent div into a flexbox, due to which its affcting its childs*/
+
+    height:300px;
+
+    /* width: 500px; */
+
+    justify-content: center; /*with "justify-content" property, we can manipulate main axis*//* we can use many other values as the values also */
+    
+    align-items:center; /*with "align-items" property, we can manipulate cross axis*//* we can use many other values as the values also */
+    
+    flex-wrap:wrap; /*with "flex-wrap" property, we can manipulate the wrapping of the child elements*/
+
+    gap:10px; /*with "gap" property, we can manipulate the gap between the child elements*/
+
+    flex:1; /*will divide the space between the childs in ratio. "1" means all will have equal ratio*/
+
+    flex-direction:column; /*with "flex-direction" property, we can manipulate the direction of the child elements accross main axis. it will also affect the woeking of "justify-content" and "align-items"*/
+}
+
+ 
+.child
+{
+    height:50px;
+    width: 70px;
+}
+
+
+
+#child2
+{
+    flex:2; /*will change the space between the childs in ratio to "2"  for child 2. means it will occupy double space*/
+}
+ 
+
+/* #child1
+{
+    order:1; #with "order" property, we can manipulate the order of the child elements 1 as 1, among the elements on which "order" is applied
+}
+
+
+#child2
+{
+    order:2; #with "order" property, we can manipulate the order of the child elements 2 as 2, among the elements on which "order" is applied
+}
+
+
+#child5
+{
+    order:3; #with "order" property, we can manipulate the order of the child elements 3 as 3, among the elements on which "order" is applied
+} */

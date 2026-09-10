@@ -1,0 +1,37 @@
+/* Use of some properties like: 
+-grid-template-areas
+-grid-area */
+
+.parent2
+{
+    border:2px solid black;
+    padding:10px;
+    display:grid;
+    grid-template-areas:
+    'header header header'
+    'content content ads'
+    'footer footer footer' ; /*this will give the visual structural layout to our grid and then using "grid-area" on the childs, we give the name to the elements as per the layout created here*/
+
+}
+.child2
+{
+    border: 2px dashed red;
+    padding: 5px;
+    margin:5px;
+}
+#header
+{
+    grid-area:header; /*giving the name to the element for ascting as an element in our layout created in "grid-template-areas" (in parent) */
+}
+#content
+{
+    grid-area:content;
+}
+#ads
+{
+    grid-area:ads;
+}
+#footer
+{
+    grid-area:footer;
+}
